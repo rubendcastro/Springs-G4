@@ -1,0 +1,71 @@
+<head>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<div id="formRegistro">
+<div class="col-md-6">
+
+                <p class="btn btn-primary form-control" onclick="showForm('#showInfo');getDetail();"></p>
+            </div>
+           
+            <div id="formRegistro" class="hide">
+                <div id="formRegistro" class="hide""></div>
+                <div class="col-md-12 form-group">
+                    <label for="campoEmail">Email:</label>
+                    <input id="campoEmail" class="form-control" type="email">
+                    <span id="campoEmailError" class="hide error">Se requiere un Email válido.</span>
+                </div>
+                <div class="col-md-12 form-group">
+                    <label for="campoNombres">Nombres:</label>
+                    <input id="campoNombres" class="form-control" type="text">
+                    <span id="campoNombresError" class="hide error">Se requiere un nombre válido.</span>
+                </div>
+                <div class="col-md-12 form-group">
+                    <label for="campoApellidos">Apellidos:</label>
+                    <input id="campoApellidos" class="form-control" type="text">
+                    <span id="campoApellidosError" class="hide error">Se requiere un Apellido válido.</span>
+                </div>
+                <div class="col-md-12 form-group">
+                    <label for="campoTelefono">Teléfono:</label>
+                    <input id="campoTelefono" class="form-control" type="text">
+                    <span id="campoTelefonoError" class="hide error">Se requiere un número telefónico válido.</span>
+                </div>
+                <div class="col-md-12 form-group">
+                    <label for="campoGenero">Genero:</label>
+                    <select id="campoGenero" class="form-control">
+                        <option value="">Seleccionar:</option>
+                        <option value="male">Hombre</option>
+                        <option value="female">Mujer</option>
+                    </select>
+                    <span id="campoGeneroError" class="hide error">El campo genero es requerido.</span>
+                </div>
+                        <div id="showDetails1" class="col-md-12">
+<legend>Estado Civil</legend>
+            <p> <input type="radio" name="size" id="size_1" value="soltero"> <label for="size_1">Soltero</label> </p>
+            <p> <input type="radio" name="size" id="size_2" value="Casado"> <label for="size_2">Casado</label> </p>
+            <p> <input type="radio" name="size" id="size_3" value="UL"> <label for="size_3">Unión Libre</label> </p>
+             <p> <input type="radio" name="size" id="size_4" value="viudo"> <label for="size_4">Viudo</label> </p>
+            </div>
+            <div id="Password" class="col-md-13">
+             <div class="col-md-12 form-group">
+                    <label for="campoNombreU">Nombre de usuario:</label><br><br>
+                    <input id="campoNombreU" class="form-control" type="text">
+                    <span id="campoNombreUError" class="hide error">Se requiere un nombre válido.</span>
+                    
+                </div>
+                <br>
+<legend>Nuevo Password:</legend>
+            <p><label for="size_0">Ingrese el nuevo Password:</label><input type="password"></p>
+             <p><label for="size_0">Ingrese de nuevo el Password:</label><input type="password"></p>
+              </div>
+                <div class="col-md-12 form-group">
+                    <p class="btn btn-primary form-control" onclick="addInfo()">Guardar</p>
+                </div>
+            </div>
+           
+            <div id="showInfo" class="hide">
+                <div id="showDetails" class="col-md-12"></div>
+            </div>
+        </div>
+   </div>
+    </body>
+</html>
