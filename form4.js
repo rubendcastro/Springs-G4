@@ -1,10 +1,10 @@
 funciotn validar_nombre(string){
-if(txtNombre == null || txtNombre.length == 30 && required minlength="4" || /^\s+$/.test(txtNombre)){
+if(campoNombre == null || campoNombre.length == 30 && required minlength = "4" || /^\s+$/.test(campoNombre)){
      alert('ERROR: El campo nombre no debe ir vacío o lleno de solamente espacios en blanco');
      return false;
  //validar character set:
 
-	var txtNombre = document.getElementById('address').value;
+	var campoNombre = document.getElementById('address').value;
 
     if( /[^a-zA-Z\-\/]/.test( TCode ) ) {
         alert('Input is not alpha');
